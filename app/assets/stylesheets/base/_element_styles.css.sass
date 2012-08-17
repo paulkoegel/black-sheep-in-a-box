@@ -5,13 +5,20 @@ body
   background-color: #42392f
   +default-font
   text-rendering: optimizeLegibility
+  text-align: justify
+  +hyphens(auto)
+
+a
+  text-decoration: none
 
 h1
   font-size: 32px
   margin-bottom: $padding
   +headline-font
   color: $headline-colour
-  margin-bottom: 2*$padding
+  margin-bottom: $padding
+  border-bottom: 2px solid #ccc //a32323
+  padding-bottom: $padding
 
 h2
   font-size: 18px
@@ -24,6 +31,11 @@ p
   margin-bottom: $padding
   line-height: 27px
   color: $text-colour
+  &#teaser
+    font-size: 18px
+    font-style: italic
+    font-family: 'Droid Serif'
+    color: #222
 
 ul
   color: $text-colour

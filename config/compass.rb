@@ -18,3 +18,4 @@ project_type = :rails
 preferred_syntax = :sass
 
 require 'compass-normalize'
+require 'sassy-buttons'
