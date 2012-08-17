@@ -14,4 +14,5 @@
         %ul#navigation
           %li.navigation--item.first= link_to 'Music', music_pages_path
           %li.navigation--item.last= link_to 'Texts', texts_pages_path
-      = yield
+      #content-container
+        = yield

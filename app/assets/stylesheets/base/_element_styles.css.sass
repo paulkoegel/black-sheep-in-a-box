@@ -3,5 +3,31 @@
 
 body
   background-color: #42392f
-  font-family: 'Droid Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  +default-font
   text-rendering: optimizeLegibility
+
+h1
+  font-size: 32px
+  margin-bottom: $padding
+  +headline-font
+  color: $headline-colour
+  margin-bottom: 2*$padding
+
+h2
+  font-size: 18px
+  font-weight: bold
+  margin-top: 3*$padding
+  margin-bottom: $padding
+  color: $headline-colour
+
+p
+  margin-bottom: $padding
+  line-height: 27px
+  color: $text-colour
+
+ul
+  color: $text-colour
+
+strong
+  font-weight: bold
+  color: $headline-colour

@@ -1,21 +1,19 @@
-$background-image-width: 1280px
+$background-image-width: 1600px
 #background-container
-  position: absolute
+  position: fixed
   top: 0
-  left: 50%
-  margin-left: round(-$background-image-width/2)
-  width: $background-image-width
+  width: 100% //$background-image-width
   height: 100%
   background-attachment: fixed
-  background-image: image-url('backgrounds/david_straw_hat.jpg')
+  background-position: center
+  background-image: image-url('background_photos/david_straw_hat.jpg')
   background-repeat: no-repeat
-  //background-size: 100%
   background-size: cover
   z-index: -1
 
 #page-container
   width: $page-container-width
-  margin: $padding auto
+  margin: $padding auto 3*$padding
 
 #header
   +pie-clearfix
@@ -30,20 +28,64 @@ $background-image-width: 1280px
   background: rgba(#fff, 0.8)
   display: inline-block
   padding: round($padding/2)
+  padding-left: 2*$padding
+  padding-bottom: 6px
   margin-top: 3*$padding
   margin-left: -$padding
   +border-radius(4px)
-  padding-left: 2*$padding
+  //height: 27px
 
 .navigation--item
   float: left
-  margin-right: 20px
+  border-right: 1px solid #666
+  padding-right: $padding
+  border-left: 1px solid #ddd
+  padding-left: $padding
+  min-width: 90px
+  text-align: center
+  display: inline-block
+  &.first
+    border-left: 0
+    padding-left: 0
   &.last
     margin-right: 0
+    border-right: 0
   > a
     text-decoration: none
     text-transform: uppercase
     color: #444
     &:hover
-      color: #111
+      color: #222
+      border-bottom: 2px solid #444
 
+#content-container
+  +pie-clearfix
+  margin-top: 2*$padding
+  padding: 2*$padding
+  background-image: image-url('noise_lines.png')
+  +border-radius(7px)
+  +box-shadow(rgba(#333, 0.6) 0 0 7px)
+
+#content
+  float: left
+  width: 580px
+  padding-right: 3*$padding
+
+#sidebar
+  float: right
+  width: 300px
+  background-color: #eee
+  border: 1px solid #ccc
+  +border-bottom-left-radius(4px)
+  +border-bottom-right-radius(4px)
+  padding: $padding
+  > ul
+    >li
+      margin-bottom: $padding
+
+#main-image
+  width: 300px
+  height: 300px
+  margin-left: -11px
+  margin-top: -11px
+  margin-bottom: 2*$padding
