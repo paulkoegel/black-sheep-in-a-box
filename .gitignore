@@ -10,6 +10,18 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
+#ignore coverage
+/coverage/*
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+.rvmrc
+config/database.yml
+#ignore sublime and rvm
+*.sublime-*
+.rvmrc
+.DS_Store
+.sass-cache
+public/uploads/**/*
+spec/support/uploads/**/*
+*.~lock.*
