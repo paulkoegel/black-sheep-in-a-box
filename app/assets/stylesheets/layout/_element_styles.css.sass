@@ -1,0 +1,49 @@
+$background-image-width: 1280px
+#background-container
+  position: absolute
+  top: 0
+  left: 50%
+  margin-left: round(-$background-image-width/2)
+  width: $background-image-width
+  height: 100%
+  background-attachment: fixed
+  background-image: image-url('backgrounds/david_straw_hat.jpg')
+  background-repeat: no-repeat
+  //background-size: 100%
+  background-size: cover
+  z-index: -1
+
+#page-container
+  width: $page-container-width
+  margin: $padding auto
+
+#header
+  +pie-clearfix
+
+#logo
+  float: left
+  z-index: 1
+  position: relative
+
+#navigation
+  +pie-clearfix
+  background: rgba(#fff, 0.8)
+  display: inline-block
+  padding: round($padding/2)
+  margin-top: 3*$padding
+  margin-left: -$padding
+  +border-radius(4px)
+  padding-left: 2*$padding
+
+.navigation--item
+  float: left
+  margin-right: 20px
+  &.last
+    margin-right: 0
+  > a
+    text-decoration: none
+    text-transform: uppercase
+    color: #444
+    &:hover
+      color: #111
+

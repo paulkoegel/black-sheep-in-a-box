@@ -1,4 +1,14 @@
 BlackSheep::Application.routes.draw do
+
+  root :to => 'pages#music'
+
+  resources :pages do
+    collection do
+      get :music
+      get :texts
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
