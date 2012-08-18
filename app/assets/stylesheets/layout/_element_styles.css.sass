@@ -61,15 +61,16 @@
 #content-container
   +pie-clearfix
   margin-top: 2*$padding
-  padding: 2*$padding
-  background-image: image-url('noise_lines.png')
-  +border-radius(7px)
-  +box-shadow(rgba(#333, 0.6) 0 0 7px)
 
 #content
   float: left
-  width: 550px
-  padding-right: 2*$padding
+  width: 570px
+  background-image: image-url('noise_lines.png')
+  padding: 2*$padding
+  padding-right: 3*$padding
+  +border-radius(7px)
+  +border-top-right-radius(0)
+  +box-shadow(rgba(#333, 0.6) 0 0 7px)
 
 .soundcloud-widget
   margin-top: $padding
@@ -79,8 +80,9 @@
   width: 270px
   background-color: #eee
   border: 1px solid #ccc
-  +border-bottom-left-radius(4px)
-  +border-bottom-right-radius(4px)
+  +border-bottom-right-radius(7px)
+  +border-top-right-radius(8px)
+  +box-shadow(rgba(#333, 0.6) 4px 0 4px)
   padding: $padding
   font-size: 14px
   hr
@@ -97,9 +99,10 @@
   margin-top: 2*$padding
 
 #main-image
-  width: 270px
+  +border-top-right-radius(7px)
+  width: 269px
   height: 270px
-  margin-left: -11px
+  margin-left: -10px
   margin-top: -11px
   margin-bottom: 2*$padding
 
