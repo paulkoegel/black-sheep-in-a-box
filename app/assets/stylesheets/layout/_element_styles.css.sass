@@ -101,12 +101,16 @@
   margin-top: 2*$padding
 
 #main-image
-  +border-top-right-radius(7px)
   width: 269px
   height: 270px
   margin-left: -10px
   margin-top: -11px
   margin-bottom: 2*$padding
+  display: block
+  > img
+    width: 269px
+    height: 270px
+    +border-top-right-radius(7px)
 
 .download-note
   color: #555

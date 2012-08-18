@@ -19,8 +19,8 @@
   %p If you like what you hear - as well as the idea of making true independent DIY art possible -, you can also consider supporting the project by purchasing one of the 150 limited edition CD. That might actually help make the next recording a lot better quality ;)
 
 #sidebar
-  = link_to asset_path('music/black_box_ep_cover.jpg') do
-    = image_tag 'music/black_box_ep_cover_small.jpg', :id => 'main-image'
+  = link_to asset_path('music/black_box_ep_cover.jpg'), :id => 'main-image' do
+    = image_tag 'music/black_box_ep_cover_small.jpg'
   .buttons-wrapper
     = link_to 'Download Free MP3s', 'http://bit.ly/L14fTY', :class => 'm-button download'
     %p.no-spacing
