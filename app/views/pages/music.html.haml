@@ -22,25 +22,34 @@
   = link_to asset_path('music/black_box_ep_cover.jpg') do
     = image_tag 'music/black_box_ep_cover_small.jpg', :id => 'main-image'
   .buttons-wrapper
-    = link_to 'Download EP', 'http://bit.ly/L14fTY', :class => 'm-button'
+    = link_to 'Download Free MP3s', 'http://bit.ly/L14fTY', :class => 'm-button download'
+    %p.no-spacing
+      or
+  .buy-wrapper
+    = link_to 'Buy CD', 'http://blacksheepinabox.bandcamp.com', :class => 'm-button buy'
     .download-note
-      (zipped MP3s, 73MB)
-  .social-buttons-wrapper
-    = link_to 'https://www.facebook.com/pages/Black-sheep-in-a-Box/227096270634367', :title => 'Facebook' do
-      = image_tag 'facebook_icon.png'
-    = link_to 'http://soundcloud.com/blacksheepedbox', :title => 'Soundcloud' do
-      = image_tag 'soundcloud_icon.png'
-    = link_to 'http://blacksheepinabox.bandcamp.com', :title => 'Bandcamp' do
-      = image_tag 'bandcamp_icon.png'
-    = link_to 'http://www.lastfm.de/music/Blacksheep+in+a+Box', :title => 'LastFM' do
-      = image_tag 'lastfm_icon.png'
-  %p The Contents of the box may include traces of the following personalities:
-  %ul
-    :erb
-      <li><strong>B.B. Blacksheep:</strong> Guitar and Vox</li>
-      <li><strong>Verminante:</strong> Strings and Vox</li>
-      <li><strong>Ajevo Argen:</strong> Vox and Guitar</li>
-      <li><strong>Private Hell:</strong> Lyrics and Whispers</li>
-      <li><strong>Adiv al Ajar:</strong> Percussion</li>
-      <li><strong>Davidian:</strong> Recording, Producing, Mixing</li>
-      <li><strong>Vida la Raja:</strong> Daytime Support</li>
+      (6€, limited to 150 CDs)
+
+  .social-wrapper
+    %h3 Spread the word:
+    .social-buttons-wrapper
+      = link_to 'https://www.facebook.com/pages/Black-sheep-in-a-Box/227096270634367', :title => 'Facebook' do
+        = image_tag 'facebook_icon.png'
+      = link_to 'http://soundcloud.com/blacksheepedbox', :title => 'Soundcloud' do
+        = image_tag 'soundcloud_icon.png'
+      = link_to 'http://blacksheepinabox.bandcamp.com', :title => 'Bandcamp' do
+        = image_tag 'bandcamp_icon.png'
+      = link_to 'http://www.lastfm.de/music/Blacksheep+in+a+Box', :title => 'LastFM' do
+        = image_tag 'lastfm_icon.png'
+  %hr
+  .dramatis-personae
+    %p The Contents of the box may include traces of the following personalities:
+    %ul
+      :erb
+        <li><strong>B.B. Blacksheep:</strong> Guitar and Vox</li>
+        <li><strong>Verminante:</strong> Strings and Vox</li>
+        <li><strong>Ajevo Argen:</strong> Vox and Guitar</li>
+        <li><strong>Private Hell:</strong> Lyrics and Whispers</li>
+        <li><strong>Adiv al Ajar:</strong> Percussion</li>
+        <li><strong>Davidian:</strong> Recording, Producing, Mixing</li>
+        <li><strong>Vida la Raja:</strong> Daytime Support</li>

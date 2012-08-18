@@ -1,10 +1,23 @@
 .m-button
   +sassy-button
+  &.download
+    margin-bottom: round($padding/2)
+  &.buy
+    +sassy-button('simple', 5px, 5px, #3bc43b, #31a331)
+    font-size: 16px
 
 .buttons-wrapper
   text-align: center
-  margin-bottom: $padding
+  margin-bottom: round($padding/2)
 
 .social-buttons-wrapper
   @extend .buttons-wrapper
-  margin-bottom: $padding
+  margin: 0
+  float: right
+  img
+    width: 21px
+    height: 21px
+
+.buy-wrapper
+  @extend .buttons-wrapper
+  background: #efefef
