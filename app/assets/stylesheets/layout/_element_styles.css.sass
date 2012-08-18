@@ -24,8 +24,9 @@
 
 #navigation
   +pie-clearfix
-  background-color: #fff
+  background-color: #fff // for IE
   background: rgba(#fff, 0.8)
+  background-image: image-url('noise_lines.png')
   display: inline-block
   padding: round($padding/2)
   padding-left: 2*$padding
@@ -33,7 +34,6 @@
   margin-top: 3*$padding
   margin-left: -$padding
   +border-radius(4px)
-  //height: 27px
 
 .navigation--item
   float: left
